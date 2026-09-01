@@ -1,4 +1,4 @@
-# Experiment 3: DML Commands
+<img width="653" height="293" alt="image" src="https://github.com/user-attachments/assets/ce80791c-5f40-4eb0-acd7-09b5d3a142b2" /># Experiment 3: DML Commands
 
 ## AIM
 To study and implement DML (Data Manipulation Language) commands.
@@ -47,123 +47,140 @@ SELECT column1, column2 FROM table_name WHERE condition;
 ```
 **Question 1**
 --
--- Paste Question 1 here
+-- <img width="653" height="293" alt="image" src="https://github.com/user-attachments/assets/d84d5b25-9752-4e85-9cb4-3ae5905ce89a" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+-- UPDATE Products
+SET quantity = quantity * 1.10;
 ```
 
 **Output:**
-
-![Output1](output.png)
+<img width="640" height="447" alt="image" src="https://github.com/user-attachments/assets/b6644165-1827-4235-9e49-faf9bc0bd5fe" />
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="636" height="222" alt="image" src="https://github.com/user-attachments/assets/c5cf84e5-acc3-4f39-86f5-081b213a2737" />
 
 ```sql
--- Paste your SQL code below for Question 2
+--UPDATE Products
+SET product_name='Grapefruit'
+WHERE product_id=4;
 ```
 
 **Output:**
-
-![Output2](output.png)
+<img width="653" height="244" alt="image" src="https://github.com/user-attachments/assets/d942c468-244e-4abd-8b54-fbd1717e50c1" />
 
 **Question 3**
 ---
--- Paste Question 3 here
+--<img width="651" height="505" alt="image" src="https://github.com/user-attachments/assets/39b4f853-7049-497e-b1d7-c1b6b1587b98" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+---- UPDATE employees
+SET salary=salary*2
+WHERE department_id=20
+    AND job_id LIKE '%MAN';
 ```
 
 **Output:**
+<img width="636" height="277" alt="image" src="https://github.com/user-attachments/assets/25b9cf69-27a4-4f0c-9257-3a6a549ba3b4" />
 
-![Output3](output.png)
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="650" height="298" alt="image" src="https://github.com/user-attachments/assets/c7c9b5f0-5669-41b1-bcbd-458b8d7b9b1a" />
 
 ```sql
--- Paste your SQL code below for Question 4
+-- UPDATE suppliers
+SET supplier_name='A1 Suppliers'
+WHERE supplier_id=8;
 ```
 
 **Output:**
-
-![Output4](output.png)
+<img width="645" height="358" alt="image" src="https://github.com/user-attachments/assets/99d5055a-f9eb-48bb-8f4f-90aaaefe662a" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="659" height="366" alt="image" src="https://github.com/user-attachments/assets/c0464711-9b9a-4731-a0ca-ac6ed0f5efd6" />
 
 ```sql
--- Paste your SQL code below for Question 5
+-- UPDATE suppliers
+SET supplier_name=UPPER(supplier_name)
+WHERE contact_person LIKE '%Singh%';
 ```
 
 **Output:**
-
-![Output5](output.png)
+<img width="647" height="344" alt="image" src="https://github.com/user-attachments/assets/4ca15cb5-895a-4ba1-bb12-165a243a1c1f" />
 
 **Question 6**
----
--- Paste Question 6 here
+<img width="655" height="176" alt="image" src="https://github.com/user-attachments/assets/56d39395-f5ee-4de2-a225-33382f202977" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+-- -- DELETE FROM Doctors
+WHERE specialization='Pediatrics'
+    AND first_name = 'Michael';
 ```
 
 **Output:**
-
-![Output6](output.png)
+<img width="645" height="323" alt="image" src="https://github.com/user-attachments/assets/c2a44ae7-294e-4603-bf67-5b0979e9bcde" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+-- <img width="647" height="364" alt="image" src="https://github.com/user-attachments/assets/df3cc934-374e-433f-8fa6-5241aed32bb7" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+-- DELETE FROM Customer
+WHERE GRADE %2!=0;
 ```
 
 **Output:**
-
-![Output7](output.png)
+<img width="646" height="327" alt="image" src="https://github.com/user-attachments/assets/2b2e94e4-da97-4577-82b0-ad9f29f19d56" />
 
 **Question 8**
 ---
--- Paste Question 8 here
+-- <img width="651" height="403" alt="image" src="https://github.com/user-attachments/assets/b28a2418-0521-44dc-b6e5-d72779368202" />
 
 ```sql
--- Paste your SQL code below for Question 8
+-- DELETE FROM Customer 
+WHERE (GRADE>2 AND  PAYMENT_AMT<(SELECT AVG(PAYMENT_AMT) FROM Customer))
+    OR OUTSTANDING_AMT>8000;
 ```
 
 **Output:**
+<img width="619" height="497" alt="image" src="https://github.com/user-attachments/assets/e922cbf8-6a74-4372-855e-96303c0699fa" />
 
-![Output8](output.png)
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="653" height="458" alt="image" src="https://github.com/user-attachments/assets/a01fb03a-519c-404d-b149-fd159e457dda" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+-- DELETE FROM Customer
+WHERE CUST_NAME LIKE '%Holmes%';
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="652" height="434" alt="image" src="https://github.com/user-attachments/assets/ad65be81-3ca1-488a-983f-33e667c3d835" />
+
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="667" height="416" alt="image" src="https://github.com/user-attachments/assets/7df2ef3b-3f49-4fe4-925a-ab50d1813da6" />
+
 
 ```sql
--- Paste your SQL code below for Question 10
+-- DELETE FROM Doctors
+WHERE specialization IS NULL;
 ```
 
 **Output:**
+<img width="647" height="468" alt="image" src="https://github.com/user-attachments/assets/be8c25f3-7d31-4aee-9e02-113d2e68ce94" />
 
-![Output10](output.png)
 
 ## RESULT
 Thus, the SQL queries to implement DML commands have been executed successfully.
