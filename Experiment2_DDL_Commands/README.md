@@ -105,124 +105,156 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="582" height="286" alt="image" src="https://github.com/user-attachments/assets/2c046bba-1c46-4c41-be49-b2cbcf839c3b" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+-- INSERT INTO Employee(EmployeeID,Name,Department,Salary)
+SELECT EmployeeID,Name,Department,Salary
+FROM Former_employees;
 ```
 
 **Output:**
-
-![Output1](output.png)
+<img width="663" height="206" alt="image" src="https://github.com/user-attachments/assets/a9406a1f-c106-428a-ac75-b79fee2121ab" />
 
 **Question 2**
----
--- Paste Question 2 here
+<img width="658" height="389" alt="image" src="https://github.com/user-attachments/assets/c93e11b8-a7e0-41f2-a9c9-25fb3327079c" />
 
 ```sql
--- Paste your SQL code below for Question 2
+-- INSERT INTO student_details(RollNo,Name,Gender,Subject,MARKS)
+VALUES(205,'Olivia Green','F',NULL,NULL),
+(207,'Liam Smith','M','Mathematic',85),
+(208,'Sophia Johns','F','Science',NULL);
 ```
 
 **Output:**
-
-![Output2](output.png)
+<img width="647" height="224" alt="image" src="https://github.com/user-attachments/assets/25e5dd3f-481f-4948-808a-e3f808631f53" />
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="655" height="330" alt="image" src="https://github.com/user-attachments/assets/3ea1bab6-b3c7-439f-a4a0-ff2bbca9dc93" />
 
 ```sql
--- Paste your SQL code below for Question 3
+-- ALTER TABLE Student_details ADD MobileNumber NUMBER;
+ALTER TABLE Student_details ADD Address VARCHAR(100);
 ```
 
 **Output:**
-
-![Output3](output.png)
+<img width="661" height="318" alt="image" src="https://github.com/user-attachments/assets/f4fe361c-cd52-4767-8c61-8cf718318dc9" />
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="660" height="365" alt="image" src="https://github.com/user-attachments/assets/600d1486-d935-4262-aef4-f3773cef8767" />
 
 ```sql
--- Paste your SQL code below for Question 4
+-- CREATE TABLE item(
+    item_id TEXT primary KEY,
+    item_desc TEXT NOT NULL,
+    rate INTEGER NOT NULL,
+    icom_id TEXT(4),
+    FOREIGN KEY(icom_id) REFERENCES company(com_id) ON UPDATE SET NULL ON DELETE SET NULL
+);
 ```
 
 **Output:**
-
-![Output4](output.png)
+<img width="646" height="278" alt="image" src="https://github.com/user-attachments/assets/8c2d26c2-156e-422c-8ed1-34d7ce4e7719" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="659" height="422" alt="image" src="https://github.com/user-attachments/assets/5353b6f7-6f15-43aa-9a36-3c4d36dc9dfd" />
 
 ```sql
--- Paste your SQL code below for Question 5
+-- ALTER TABLE customer
+RENAME COLUMN city TO location;
 ```
 
 **Output:**
 
-![Output5](output.png)
+<img width="630" height="250" alt="image" src="https://github.com/user-attachments/assets/2a7cdd6e-6a29-4fb2-b843-fc17a51f77f4" />
 
 **Question 6**
 ---
--- Paste Question 6 here
+
+<img width="641" height="218" alt="image" src="https://github.com/user-attachments/assets/dd738808-710d-479c-9c2d-bc95f9a1d870" />
 
 ```sql
--- Paste your SQL code below for Question 6
+-- INSERT INTO Products(ProductID,Name,Category)
+VALUES (104,'Tablet','Electronics');
 ```
 
 **Output:**
 
-![Output6](output.png)
+<img width="652" height="237" alt="image" src="https://github.com/user-attachments/assets/1c3ad6eb-71c9-466f-b838-51857aa8f0fe" />
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="654" height="348" alt="image" src="https://github.com/user-attachments/assets/bbf0ef1d-50ab-47b4-88db-f1147a454b1a" />
 
 ```sql
--- Paste your SQL code below for Question 7
+-- CREATE TABLE item(
+  item_id TEXT PRIMARY KEY,
+  item_desc TEXT NOT NULL,
+  rate INTEGER NOT NULL,
+  icom_id VARCHAR(4),
+  FOREIGN KEY(icom_id) REFERENCES company (com_id) ON UPDATE CASCADE ON DELETE CASCADE
+);
 ```
 
 **Output:**
 
-![Output7](output.png)
+<img width="646" height="271" alt="image" src="https://github.com/user-attachments/assets/19db63b1-5bbe-434f-9ae8-bcbc94719853" />
 
 **Question 8**
 ---
--- Paste Question 8 here
+
+<img width="637" height="311" alt="image" src="https://github.com/user-attachments/assets/ac87ff8d-3b86-499a-ae0c-c1d5f62773c4" />
 
 ```sql
--- Paste your SQL code below for Question 8
+---CREATE TABLE Tasks(
+    TaskID INTEGER,
+    TaskName TEXT,
+    DueDate DATE
+);
 ```
 
 **Output:**
-
-![Output8](output.png)
+<img width="659" height="269" alt="image" src="https://github.com/user-attachments/assets/c4bed9eb-c9bc-49d0-b454-621bdb277830" />
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="661" height="283" alt="image" src="https://github.com/user-attachments/assets/33f11353-b32c-443f-83ad-28abd45eabcb" />
 
 ```sql
--- Paste your SQL code below for Question 9
+-- CREATE TABLE Department(
+ DepartmentID INTEGER PRIMARY KEY,
+ DepartmentName TEXT UNIQUE NOT NULL,
+ Location TEXT
+
+);
 ```
 
 **Output:**
 
-![Output9](output.png)
+<img width="643" height="218" alt="image" src="https://github.com/user-attachments/assets/6368980a-0b6d-4844-b0cd-bcd1b0bc96c4" />
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="648" height="291" alt="image" src="https://github.com/user-attachments/assets/93ec7f33-4aa1-459b-b5bb-a03124bbe5d9" />
 
 ```sql
--- Paste your SQL code below for Question 10
+-- CREATE TABLE Bonuses(
+     BonusID INTEGER PRIMARY KEY,
+     EmployeeID INTEGER,
+     BonusAmount REAL CHECK (BonusAmount>0),
+     BonusDate DATE,
+     Reason TEXT NOT NULL,
+     FOREIGN KEY (EmployeeID)REFERENCES Employees(EmployeeID)
+);
 ```
 
 **Output:**
 
-![Output10](output.png)
-
+<img width="654" height="258" alt="image" src="https://github.com/user-attachments/assets/f0892741-097a-4f76-97bf-d02f3f31e997" />
 
 ## RESULT
 Thus, the SQL queries to implement different types of constraints and DDL commands have been executed successfully.
